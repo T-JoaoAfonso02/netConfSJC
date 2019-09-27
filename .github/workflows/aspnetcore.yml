@@ -15,14 +15,14 @@ jobs:
         dotnet-version: 2.2.108
     
     - name: Restore
-      run: dotnet restore
+      run: dotnet restore netconf
     
     - name: Build with dotnet
-      run: dotnet build --configuration Release
+      run: dotnet build netconf --configuration Release
 
 
     - name: Dotnet Publish
-      run: dotnet publish --configuration Release -o netcore 
+      run: dotnet publish netconf --configuration Release -o netcore 
       
     - uses: azure/webapps-deploy@v1
       with: 
