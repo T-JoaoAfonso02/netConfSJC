@@ -1,35 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "D:\\gitprojects\\netconfsjc\\NetConf\\NetConf\\NetConf.csproj": {}
+    "D:\\gitprojetcs\\netConfSJC\\NetConf\\NetConf.csproj": {}
   },
   "projects": {
-    "D:\\gitprojects\\netconfsjc\\NetConf\\NetConf\\NetConf.csproj": {
+    "D:\\gitprojetcs\\netConfSJC\\NetConf\\NetConf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\gitprojects\\netconfsjc\\NetConf\\NetConf\\NetConf.csproj",
+        "projectUniqueName": "D:\\gitprojetcs\\netConfSJC\\NetConf\\NetConf.csproj",
         "projectName": "NetConf",
-        "projectPath": "D:\\gitprojects\\netconfsjc\\NetConf\\NetConf\\NetConf.csproj",
-        "packagesPath": "C:\\Users\\esx\\.nuget\\packages\\",
-        "outputPath": "D:\\gitprojects\\netconfsjc\\NetConf\\NetConf\\obj\\",
+        "projectPath": "D:\\gitprojetcs\\netConfSJC\\NetConf\\NetConf.csproj",
+        "packagesPath": "C:\\Users\\JulioArruda\\.nuget\\packages\\",
+        "outputPath": "D:\\gitprojetcs\\netConfSJC\\NetConf\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\esx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JulioArruda\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://mongeral.pkgs.visualstudio.com/_packaging/Nuget-Mongeral-Framework4.6/nuget/v3/index.json": {},
-          "https://mongeral.pkgs.visualstudio.com/_packaging/Nuget-Mongeral-Prereleases/nuget/v3/index.json": {},
-          "https://mongeral.pkgs.visualstudio.com/_packaging/Nuget-Mongeral/nuget/v3/index.json": {},
-          "https://pkgs.dev.azure.com/mongeral/_packaging/MongeralGAC/nuget/v3/index.json": {}
+          "https://pkgs.dev.azure.com/mongeral/_packaging/Nuget-Mongeral/nuget/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.1": {
