@@ -28,4 +28,4 @@ jobs:
       with: 
         app-name: netconfsjc
         publish-profile: ${{ secrets.azureWebAppPublishProfile }}
-        package: $GITHUB_WORKSPACE
+        package: '/home/runner/work/netConfSJC/netConfSJC/NetConf/netcore/'
