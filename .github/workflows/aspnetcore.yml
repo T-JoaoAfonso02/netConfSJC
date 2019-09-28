@@ -5,7 +5,12 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: [8, 10, 12]
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
     
     steps:
     - uses: actions/checkout@v1
@@ -24,8 +29,3 @@ jobs:
     - name: Dotnet Publish
       run: dotnet publish --configuration Release -o netcore 
       
-    - uses: azure/webapps-deploy@v1
-      with: 
-        app-name: netconfsjc
-        publish-profile: ${{ secrets.azureWebAppPublishProfile }}
-        package: '/home/runner/work/netConfSJC/netConfSJC/NetConf/netcore/'
