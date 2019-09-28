@@ -11806,11 +11806,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\gitprojetcs\\netConfSJC\\NetConf\\NetConf.csproj",
+      "projectUniqueName": "C:\\Users\\JulioArruda\\Source\\Repos\\julioarruda\\netConfSJC\\NetConf\\NetConf.csproj",
       "projectName": "NetConf",
-      "projectPath": "D:\\gitprojetcs\\netConfSJC\\NetConf\\NetConf.csproj",
+      "projectPath": "C:\\Users\\JulioArruda\\Source\\Repos\\julioarruda\\netConfSJC\\NetConf\\NetConf.csproj",
       "packagesPath": "C:\\Users\\JulioArruda\\.nuget\\packages\\",
-      "outputPath": "D:\\gitprojetcs\\netConfSJC\\NetConf\\obj\\",
+      "outputPath": "C:\\Users\\JulioArruda\\Source\\Repos\\julioarruda\\netConfSJC\\NetConf\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
