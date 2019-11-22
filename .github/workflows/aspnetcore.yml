@@ -35,7 +35,7 @@ jobs:
         # Publish profile (*.publishsettings) file contents with Web Deploy secrets
         publish-profile: ${{ secrets. expoetep }}
         app-name: expoetep
-        package: netcore
+        package: /home/runner/work/netConfSJC/netConfSJC/NetConf/netcore/
         slot-name: dev
 
 
