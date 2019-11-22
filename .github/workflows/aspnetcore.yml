@@ -4,7 +4,11 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node_version: ['8', '10', '12']
+        os: [ubuntu-latest, windows-latest, macOS-latest]
         
     steps:
     - uses: actions/checkout@v1
@@ -22,10 +26,4 @@ jobs:
 
     - name: Dotnet Publish
       run: dotnet publish --configuration Release -o netcore 
-    
-    - name: Azure WebApp
-      uses: Azure/webapps-deploy@v1
-      with:
-        publish-profile: ${{ secrets. expoetep }}
-        app-name: expoetep
-        package: /home/runner/work/netConfSJC/netConfSJC/NetConf/netcore/
+
