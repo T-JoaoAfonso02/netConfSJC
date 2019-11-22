@@ -28,4 +28,15 @@ jobs:
 
     - name: Dotnet Publish
       run: dotnet publish --configuration Release -o netcore 
-      
+    
+    - name: Azure WebApp
+      uses: Azure/webapps-deploy@v1
+      with:
+        # Publish profile (*.publishsettings) file contents with Web Deploy secrets
+        publish-profile: ${{ secrets. expoetep }}
+        app-name: expoetep
+        package: netcore
+        slot-name: dev
+
+
+
