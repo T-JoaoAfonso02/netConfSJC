@@ -7,7 +7,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node_version: ['8', '10', '12']
+        dotnet: [ '3.0.100', '3.1.100' ]
         os: [ubuntu-latest, windows-latest, macOS-latest]
         
     steps:
@@ -15,7 +15,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 2.2.108
+        dotnet-version: ${{ matrix.dotnet }}
     
     - name: Restore
       run: dotnet restore
