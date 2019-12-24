@@ -1,6 +1,9 @@
 name: ASP.NET Core CI
 
-on: [push]
+on: 
+  pull_request:
+    branches: 
+      - master
 
 jobs:
   build:
@@ -26,4 +29,16 @@ jobs:
 
     - name: Dotnet Publish
       run: dotnet publish --configuration Release -o netcore 
+      
+  automerge:
+    name: Merge Pull Request
+    uses: actions/github-script@0.2.0
+    with: 
+      scripts: |
+        github.pullRequests.merge ({
+          owner: context.payload.repository.owner.login,
+          repo: context.payload.repository.name,
+          pull_number: context.payload.pull_request.number
+        })
+      github-token: ${{github.token}}
 
